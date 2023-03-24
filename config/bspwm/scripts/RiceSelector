@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# Author 	 -  z0mbi3
+# Source 	 -  https://github.com/gh0stzk/dotfiles
+# Maintainer -  z0mbi3.zk@protonmail.com
+
+cfg_file="$HOME/.config/bspwm/rice.cfg"
+rofi_command="rofi -theme $HOME/.config/bspwm/scripts/RiceSelector.rasi"
+
+# Options
+emilia="󰔿 Emilia"
+aline="󰔿 Aline"
+isabel="󰔿 Isabel"
+silvia="󰔿 Silvia"
+pamela="󰔿 Pamela"
+cristina="󰔿 Cristina"
+
+options="$emilia\n$aline\n$isabel\n$silvia\n$pamela\n$cristina"
+chosen="$(printf "$options" | $rofi_command -dmenu)"
+	case $chosen in
+
+			$emilia)
+				cat <<< "emilia" > ${cfg_file}
+				bspc wm -r
+				;;
+			$aline)
+				cat <<< "aline" > ${cfg_file}
+				bspc wm -r
+				;;
+			$isabel)
+				cat <<< "isabel" > ${cfg_file}
+				bspc wm -r
+				;;
+			$silvia)
+				cat <<< "silvia" > ${cfg_file}
+				bspc wm -r
+				;;
+			$pamela)
+				cat <<< "pamela" > ${cfg_file}
+				bspc wm -r
+				;;
+			$cristina)
+				cat <<< "cristina" > ${cfg_file}
+				bspc wm -r
+				;;				
+		esac
+	

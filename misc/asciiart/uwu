@@ -1,0 +1,58 @@
+#!/bin/sh
+  
+# Author: Ivo
+# Source: http://crunchbang.org/forums/viewtopic.php?pid=237794#p237794
+# ANSI Color -- use these variables to easily have different color
+#    and format output. Make sure to output the reset sequence after 
+#    colors (f = foreground, b = background), and use the 'off'
+#    feature for anything you turn on.
+
+initializeANSI()
+{
+  esc=""
+
+  redf="${esc}[31m";     greenf="${esc}[32m"
+  yellowf="${esc}[33m"   bluef="${esc}[34m";   
+  cyanf="${esc}[36m";    purplef="${esc}[35m"   
+  
+  redfbright="${esc}[91m";     greenfbright="${esc}[92m"
+  yellowfbright="${esc}[93m"   bluefbright="${esc}[94m";   
+  cyanfbright="${esc}[96m";    purplefbright="${esc}[95m"   
+                      
+  boldon="${esc}[1m";    
+  reset="${esc}[0m"
+}
+
+# note in this first use that switching colors doesn't require a reset
+# first - the new color overrides the old one.
+
+initializeANSI
+
+cat << EOF 
+
+
+                                                                                 
+                                                                                 
+${boldon}${redfbright}      UUUUUUUU     UUUUUUUU                                       UUUUUUUU     UUUUUUUU
+${boldon}${redfbright}      U::::::U     U::::::U                  🥺                   U::::::U     U::::::U
+${boldon}${redfbright}      U::::::U     U::::::U                 👉👈                 U::::::U     U::::::U
+${boldon}${redfbright}      UU:::::U     U:::::UU                                       UU:::::U     U:::::UU
+${boldon}${redfbright}       U:::::U     U:::::Uwwwwwww           wwwww           wwwwwwwU:::::U     U:::::U 
+${boldon}${redfbright}       U:::::D     D:::::U w:::::w         w:::::w         w:::::w U:::::D     D:::::U 
+${boldon}${redfbright}       U:::::D     D:::::U  w:::::w       w:::::::w       w:::::w  U:::::D     D:::::U 
+${boldon}${redfbright}       U:::::D     D:::::U   w:::::w     w:::::::::w     w:::::w   U:::::D     D:::::U 
+${boldon}${redfbright}       U:::::D     D:::::U    w:::::w   w:::::w:::::w   w:::::w    U:::::D     D:::::U 
+${boldon}${redfbright}       U:::::D     D:::::U     w:::::w w:::::w w:::::w w:::::w     U:::::D     D:::::U 
+${boldon}${redfbright}       U:::::D     D:::::U      w:::::w:::::w   w:::::w:::::w      U:::::D     D:::::U 
+${boldon}${redfbright}       U::::::U   U::::::U       w:::::::::w     w:::::::::w       U::::::U   U::::::U 
+${boldon}${redfbright}       U:::::::UUU:::::::U        w:::::::w       w:::::::w        U:::::::UUU:::::::U 
+${boldon}${redfbright}        UU:::::::::::::UU          w:::::w         w:::::w          UU:::::::::::::UU  
+${boldon}${redfbright}          UU:::::::::UU             w:::w           w:::w             UU:::::::::UU    
+${boldon}${redfbright}            UUUUUUUUU                www             www                UUUUUUUUU      
+${boldon}${redfbright}                                            elmer                                           
+${reset}
+
+
+
+EOF
+
