@@ -168,7 +168,7 @@ sleep 2
 clear
 
 logo "Installing needed packages from AUR"				 
-yay -S eww nerd-fonts-cozette-ttf scientifica-font pcmanfm github-desktop --removemake --cleanafter
+yay -S nerd-fonts-cozette-ttf scientifica-font pcmanfm --removemake --cleanafter
 sleep 2	  
 clear
 
