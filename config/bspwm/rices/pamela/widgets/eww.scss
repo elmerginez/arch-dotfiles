@@ -3,87 +3,29 @@
     all: unset;
 }
 
-/* tooltip */
+/* tooltip 
 tooltip
 {
     background-color: #161320;
     font-family: UbuntuMono Nerd Font;
     font-size: 14px;
 }
-
-/* power */
-
-
-.lock-btn
+*/
+/* tooltip */
+tooltip
 {
-    color: #D9E0EE;
-    font-family: Material Design Icons Desktop;
-    font-size: 30px;
+    background-color: rgb(77, 77, 77);
+    font-family: JetBrainsMono;
+    font-size: 14px;
 }
 
-.lock-btn:hover
-{
-    color: #F28FAD;
-    font-family: Material Design Icons Desktop;
-    font-size: 35px;
-}
-
-.power-btn
-{
-    color: #D9E0EE;
-    font-family: Material Design Icons Desktop;
-    font-size: 30px;
-}
-
-.power-btn:hover
-{
-    color: #F28FAD;
-    font-family: Material Design Icons Desktop;
-    font-size: 35px;
-}
-
-.restart-btn
-{
-    color: #D9E0EE;
-    font-family: Material Design Icons Desktop;
-    font-size: 30px;
-}
-
-.restart-btn:hover
-{
-    color: #F28FAD;
-    font-family: Material Design Icons Desktop;
-    font-size: 35px;
-}
-
-.logout-btn
-{
-    color: #D9E0EE;
-    font-family: Material Design Icons Desktop;
-    font-size: 30px;
-}
-
-.logout-btn:hover
-{
-    color: #F28FAD;
-    font-family: Material Design Icons Desktop;
-    font-size: 35px;
-}
-
-.powermenu
-{
-    background-color: #1D1F28;
-    border-radius: 8px;
-    //border: 2px solid #2f354b;
-}
-
-/* launcher */
-
+// Launcher
+//-----------
 .launchermenu
 {
-    background-color: #1D1F28;
+    background-color: #2f354b;
     border-radius: 8px;
-    //border: 2px solid #2f354b;
+    // border: 2px ridge #08080a;
 }
 
 .launcher-icon
@@ -94,46 +36,151 @@ tooltip
 }
 
 .face {
-	background-size: 130px;
-	min-height: 130px;
-	min-width: 130px;
+	background-size: 150px;
+	min-height: 150px;
+	min-width: 150px;
 	margin: 13px 0px 11px 0px;
-	border-radius: 100%;
+	border-radius: 50%;
 }
 
 .launcher-pfp-label
 {
-    font-family: Inconsolata Semi Condensed Medium;
-    font-size: 20px;
+    font-family: JetBrainsMono;
+    font-size: 15px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
 .launcher-pfp-label2
 {
-    font-family: Inconsolata Semi Condensed Medium;
-    font-size: 25px;
+    font-family: JetBrainsMono;
+    font-size: 20px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
+    color: rgb(232, 3, 232);
+    border-bottom: #a900bf solid 2px;
 }
 
-.launcher-btn
+// Firefox - files - terminal - editor
+//-------------
+.launcher-btn-0
 {
-    color: #D9E0EE;
+    border: transparent solid 1px;
+    color: orange;
     font-family: Material Design Icons Desktop;
-    font-size: 18px;
-    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+    margin: 5px;
 }
-
-.launcher-btn:hover
+.launcher-btn-0:hover
 {
-    color: #F28FAD;
-    font-family: Material Design Icons Desktop;
-    font-size: 18px;
-    margin: 20px 0px 20px 0px;
+    border: orange solid 1px;
+    border-radius: 10px;
 }
+//-------------
+.launcher-btn-1
+{
+    border: transparent solid 1px;
+    color: cyan;
+    font-family: Material Design Icons Desktop;
+    font-size: 30px;
+    margin: 5px;
+}
+.launcher-btn-1:hover
+{
+    border: cyan solid 1px;
+    border-radius: 10px;
+}
+//-------------
+.launcher-btn-2
+{
+    border: transparent solid 1px;
+    color: pink;
+    font-family: Material Design Icons Desktop;
+    font-size: 30px;
+    margin: 5px;
+}
+.launcher-btn-2:hover
+{
+    border: pink solid 1px;
+    border-radius: 10px;
+}
+//-------------
+.launcher-btn-3
+{
+    border: transparent solid 1px;
+    color: blue;
+    font-family: Material Design Icons Desktop;
+    font-size: 30px;
+    margin: 5px;
+}
+.launcher-btn-3:hover
+{
+    border: blue solid 1px;
+    border-radius: 10px;
+}
+//--------------
 
+//Others
+
+
+//Quit sesion - reboot - power off
+.launcher-btn2-0
+{
+    border: 1px solid #190000;
+    color: #310000;
+    font-family: Material Design Icons Desktop;
+    font-size: 17px;
+    margin: 5px;
+    border-radius: 5;
+    animation-duration: 1000ms;
+}
+.launcher-btn2-0:hover
+{
+    background: #190000;
+    color: #ff0000;
+    font-family: Material Design Icons Desktop;
+    font-size: 17px;
+    margin: 5px;
+    animation-duration: 1000ms;
+}
+.launcher-btn2-1
+{
+    border: 1px solid #190000;
+    color: #310000;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5;
+    border-radius: 5;
+}
+.launcher-btn2-1:hover
+{
+    background: #190000;
+    color: #ff0000;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+}
+.launcher-btn2-2
+{
+    
+    border: 1px solid #190000;
+    color: #310000;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5;
+    border-radius: 5;
+}
+.launcher-btn2-2:hover
+{
+    background: #190000;
+    color: #ff0000;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+}
 /* Calendar */
 
 .cal-box {

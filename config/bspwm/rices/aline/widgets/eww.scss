@@ -1,0 +1,175 @@
+*
+{
+    all: unset;
+}
+
+/* tooltip */
+tooltip
+{
+    background-color: rgb(77, 77, 77);
+    font-family: JetBrainsMono;
+    font-size: 14px;
+}
+
+// Launcher
+//-----------
+.launchermenu
+{
+    background-color: #f4f5f8;
+    border-radius: 8px;
+    border: 2px ridge #f4f5f8;
+}
+
+.launcher-icon
+{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.face {
+	background-size: 150px;
+	min-height: 150px;
+	min-width: 150px;
+	margin: 13px 0px 11px 0px;
+	border-radius: 50%;
+}
+
+.launcher-pfp-label
+{
+    font-family: JetBrainsMono;
+    font-size: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.launcher-pfp-label2
+{
+    font-family: JetBrainsMono;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: rgb(232, 3, 232);
+    border-bottom: #a900bf solid 2px;
+}
+
+// Firefox - files - terminal - editor
+//-------------
+.launcher-btn-0
+{
+    border: transparent solid 1px;
+    color: orange;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+}
+.launcher-btn-0:hover
+{
+    border: orange solid 1px;
+    border-radius: 10px;
+}
+//-------------
+.launcher-btn-1
+{
+    border: transparent solid 1px;
+    color: cyan;
+    font-family: Material Design Icons Desktop;
+    font-size: 30px;
+    margin: 5px;
+}
+.launcher-btn-1:hover
+{
+    border: cyan solid 1px;
+    border-radius: 10px;
+}
+//-------------
+.launcher-btn-2
+{
+    border: transparent solid 1px;
+    color: pink;
+    font-family: Material Design Icons Desktop;
+    font-size: 30px;
+    margin: 5px;
+}
+.launcher-btn-2:hover
+{
+    border: pink solid 1px;
+    border-radius: 10px;
+}
+//-------------
+.launcher-btn-3
+{
+    border: transparent solid 1px;
+    color: blue;
+    font-family: Material Design Icons Desktop;
+    font-size: 30px;
+    margin: 5px;
+}
+.launcher-btn-3:hover
+{
+    border: blue solid 1px;
+    border-radius: 10px;
+}
+//--------------
+
+//Others
+
+
+//Quit sesion - reboot - power off
+.launcher-btn2-0
+{
+    border: 1px solid #190000;
+    color: #310000;
+    font-family: Material Design Icons Desktop;
+    font-size: 17px;
+    margin: 5px;
+    border-radius: 5;
+    animation-duration: 1000ms;
+}
+.launcher-btn2-0:hover
+{
+    background: #190000;
+    color: #ff0000;
+    font-family: Material Design Icons Desktop;
+    font-size: 17px;
+    margin: 5px;
+    animation-duration: 1000ms;
+}
+.launcher-btn2-1
+{
+    border: 1px solid #190000;
+    color: #310000;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5;
+    border-radius: 5;
+}
+.launcher-btn2-1:hover
+{
+    background: #190000;
+    color: #ff0000;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+}
+.launcher-btn2-2
+{
+    
+    border: 1px solid #190000;
+    color: #310000;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5;
+    border-radius: 5;
+}
+.launcher-btn2-2:hover
+{
+    background: #190000;
+    color: #ff0000;
+    font-family: Material Design Icons Desktop;
+    font-size: 20px;
+    margin: 5px;
+}

@@ -30,14 +30,14 @@ font:
     family: JetBrainsMono Nerd Font
     #style: Bold Italic
 
-  size: 10
+  size: 8
 
 # Colors (Onedark) Isabel Rice
 colors:
   primary:
-    background: '#14171c'
+    #background: '#14171c'
+    background: '#000000'
     foreground: '#b8bfe5'
-
   normal:
     black:   '#5c6370'
     red:     '#be5046'

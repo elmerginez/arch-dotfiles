@@ -1,27 +1,16 @@
 #!/usr/bin/env bash
 
-# ╔╦╗ ╦ ╦ ╔═╗ ╦ ╔═╗
-# ║║║ ║ ║ ╚═╗ ║ ║  
-# ╩ ╩ ╚═╝ ╚═╝ ╩ ╚═╝
-
-# author	Niraj
-# github	niraj998
-
-# ┌─┐┌─┐┌┐┌┌─┐┬┌─┐┬ ┬┬─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
-# │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││└─┐
-# └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘└─┘
-
 # uncomment your music players below.
-# 
 
 Control="MPD"
-[ -n "$(pgrep spotify)" ] && Control="spotify"
+
+#[ -n "$(pgrep spotify)" ] && Control="spotify"
 # [ -n "$(pgrep brave-bin)" ] && Control="brave-bin"
 # [ -n "$(pgrep rhythmbox)" ] && Control="rhythmbox"
 # [ -n "$(pgrep audacious)" ] && Control="audacious"
 # [ -n "$(pgrep clementine)" ] && Control="clementine"
 # [ -n "$(pgrep strawberry)" ] && Control="strawberry"
-
+#[ -n "$(pgrep ncmpcpp)" ] && Control="ncmpcpp"
 
 
 # saves covers here
@@ -29,7 +18,7 @@ Cover=/tmp/cover.png
 # if cover not found in metadata use this instead
 bkpCover=~/.config/bspwm/assets/fallback.webp
 # mpd music directory
-mpddir=/run/media/z0mbi3/windows/Musica
+mpddir=/home/z/Music
 
 # ┌─┐┬  ┌─┐┬ ┬┌─┐┬─┐┌─┐┌┬┐┬    ┌─┐┌─┐┬─┐┬┌─┐┌┬┐┌─┐
 # ├─┘│  ├─┤└┬┘├┤ ├┬┘│   │ │    └─┐│  ├┬┘│├─┘ │ └─┐

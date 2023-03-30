@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Author 	 -  z0mbi3
-# Source 	 -  https://github.com/gh0stzk/dotfiles
-# Maintainer -  z0mbi3.zk@protonmail.com
-
 wid=$1
 class=$2
 instance=$3

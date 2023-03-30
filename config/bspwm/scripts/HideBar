@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-#	Simple script to hide/unhide polybar
-#   Author: z0mbi3
-#	url: https://github.com/gh0stzk
-
+#			Simple script to hide/unhide polybar
 
 function hide() {
 	

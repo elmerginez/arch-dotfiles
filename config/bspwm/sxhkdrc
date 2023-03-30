@@ -7,10 +7,11 @@ super + alt + Return
 	qterminal -t floaterm
 	
 # Apps > abre una app
-super + alt + {p,c,b}
+super + alt + {p,c,b,f}
 	{pcmanfm, \
 	code, \
-	brave-nightly}
+	brave-nightly,\
+	firefox}
         
 #hide > esconde la barra de tareas
 super + period

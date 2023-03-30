@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-#	Script to open with selected terminal
-#   Author: z0mbi3
-#	url: https://github.com/gh0stzk
-
 MY_TERM="alacritty"
 
 if [[ "$MY_TERM" == "alacritty" ]]; then

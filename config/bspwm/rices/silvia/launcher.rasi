@@ -1,12 +1,3 @@
-// # Modification by 	-  z0mbi3
-// # Source 			-  https://github.com/gh0stzk/dotfiles
-// # Maintainer 		-  z0mbi3.zk@protonmail.com
-
-/** Original Work
- * Author : Aditya Shakya (adi1090x)
- * Github : https://github.com/adi1090x/rofi
- **/
-
 configuration {
 	modi: 						"drun";
 	icon-theme: 				"Papirus-Dark";
@@ -69,7 +60,7 @@ inputbar {
     spacing:                     10px;
     padding:                     10px 10px 15px;
     background-color:            transparent;
-    background-image:            url("~/.config/bspwm/assets/si-rofi.webp", width);
+    background-image:            url("~/.config/bspwm/assets/app-back.webp", width);
     text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry" ];
