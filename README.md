@@ -13,11 +13,18 @@ holii...
 <summary><b><code>Install config</code></b></summary>
 
 <p align="left">
-  download installer
+  download installer for Arch based system
 </p>
 
 ```
 curl https://raw.githubusercontent.com/elmerginez/zbspwm/master/installer -o $HOME/installer
+```
+<p align="left">
+  download installer for Debian based system
+</p>
+
+```
+curl https://raw.githubusercontent.com/elmerginez/zbspwm/master/installerapt -o $HOME/installerapt
 ```
 <p align="left">
   get run permision
