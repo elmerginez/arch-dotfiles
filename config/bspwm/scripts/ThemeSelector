@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+cfg_file="$HOME/.config/bspwm/theme.cfg"
+rofi_command="rofi -theme $HOME/.config/bspwm/scripts/ThemeSelector.rasi"
+
+# Options
+theme1="󰔿 1"
+theme2="󰔿 2"
+theme3="󰔿 3"
+theme4="󰔿 4"
+theme5="󰔿 5"
+theme6="󰔿 6"
+
+options="$theme1\n$theme2\n$theme3\n$theme4\n$theme5\n$theme6"
+chosen="$(printf "$options" | $rofi_command -dmenu)"
+	case $chosen in
+
+			$theme1)
+				cat <<< "theme1" > ${cfg_file}
+				bspc wm -r
+				;;
+			$theme2)
+				cat <<< "theme2" > ${cfg_file}
+				bspc wm -r
+				;;
+			$theme3)
+				cat <<< "theme3" > ${cfg_file}
+				bspc wm -r
+				;;
+			$theme4)
+				cat <<< "theme4" > ${cfg_file}
+				bspc wm -r
+				;;
+			$theme5)
+				cat <<< "theme5" > ${cfg_file}
+				bspc wm -r
+				;;
+			$theme6)
+				cat <<< "theme6" > ${cfg_file}
+				bspc wm -r
+				;;				
+		esac
+	

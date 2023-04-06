@@ -2,10 +2,10 @@
 
 # Def vars
 
-export RICETHEME=$(<$HOME/.config/bspwm/rice.cfg)
+export RICETHEME=$(<$HOME/.config/bspwm/theme.cfg)
 PATH="$HOME/.config/bspwm/scripts:$PATH"
 bspdir="$HOME/.config/bspwm"
-polydir="$HOME/.config/bspwm/rices/$RICETHEME/polybar"
+polydir="$HOME/.config/bspwm/themes/$RICETHEME/polybar"
 export defnetif=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
 
 # You can edit this
@@ -28,7 +28,7 @@ function killeww() {
 }
 
 function ReloadTerms() {
-  cat $HOME/.config/bspwm/rices/$RICETHEME/alacrittyrc > $HOME/.config/alacritty/alacritty.yml
+  cat $HOME/.config/bspwm/themes/$RICETHEME/alacrittyrc > $HOME/.config/alacritty/alacritty.yml
 }
 
 function SetBspwmConf() {
@@ -63,70 +63,70 @@ workspaces
 
 case $RICETHEME in
 	
-		emilia)
+		theme1)
 		
 		  SetBspwmConf "$BSPWM_BORDER" 40 5 "#414868" "#c0caf5" "#bb9af7" "#7aa2f7" 5 5 "$BSPWM_GAP"
 		  		  
 		  killeww
-		  launch polybar -q emi-bar -c ${polydir}/config.ini
+		  launch polybar -q theme1-bar1 -c ${polydir}/config.ini
 		  launch dunst -config ${bspdir}/dunstrc-dark 
 		  
 		  ;;
 
-		aline)
+		theme2)
 		
 		  SetBspwmConf "$BSPWM_BORDER" 40 5 "#ca9ee6" "#ca9ee6" "#8CAAEE" "#E78284" 5 5 "$BSPWM_GAP"
 		  
 		  killeww
-		  launch polybar -q aline-bar1 -c ${polydir}/config.ini
-		  polybar -q aline-bar2 -c ${polydir}/config.ini &
-		  polybar -q aline-bar3 -c ${polydir}/config.ini &
+		  launch polybar -q theme2-bar1 -c ${polydir}/config.ini
+		  polybar -q theme2-bar2 -c ${polydir}/config.ini &
+		  polybar -q theme2-bar3 -c ${polydir}/config.ini &
 		  launch dunst -config ${bspdir}/dunstrc-light
 		  
 		  ;;
 		  
-		isabel)
+		theme3)
 		
 		  SetBspwmConf "$BSPWM_BORDER" 5 35 "#b8bfe5" "#b8bfe5" "#7560d3" "#81ae5f" 5 5 "$BSPWM_GAP" 
 		  
 		  killeww
-		  launch polybar -q isa-bar -c ${polydir}/config.ini
+		  launch polybar -q theme3-bar1 -c ${polydir}/config.ini
 		  launch dunst -config ${bspdir}/dunstrc-dark
 		  
 		  ;;
 		  
-		silvia)
+		theme4)
 		
 		  SetBspwmConf "$BSPWM_BORDER" 35 5 "#d3869b" "#d3869b" "#fbf1c7" "#b8bb26" 5 5 "$BSPWM_GAP"
 
 		  killeww
-		  launch polybar -q cata-bar -c ${polydir}/config.ini
+		  launch polybar -q theme4-bar1 -c ${polydir}/config.ini
 		  launch dunst -config ${bspdir}/dunstrc-dark
 		  
 		  ;;
 		  
-		pamela)
+		theme5)
 		
 		  SetBspwmConf "$BSPWM_BORDER" 40 5 "#C574DD" "#C574DD" "#8897F4" "#FF4971" 5 5 "$BSPWM_GAP"
 		  
 		  killeww
-		  launch polybar -q pam1 -c ${polydir}/config.ini
-		  polybar -q pam2 -c ${polydir}/config.ini &
-		  polybar -q pam3 -c ${polydir}/config.ini &
-		  polybar -q pam4 -c ${polydir}/config.ini &
-		  polybar -q pam5 -c ${polydir}/config.ini &
-		  polybar -q pam6 -c ${polydir}/config.ini &
-		  polybar -q pam7 -c ${polydir}/config.ini &
+		  launch polybar -q theme5-bar1 -c ${polydir}/config.ini
+		  polybar -q theme5-bar2 -c ${polydir}/config.ini &
+		  polybar -q theme5-bar3 -c ${polydir}/config.ini &
+		  polybar -q theme5-bar4 -c ${polydir}/config.ini &
+		  polybar -q theme5-bar5 -c ${polydir}/config.ini &
+		  polybar -q theme5-bar6 -c ${polydir}/config.ini &
+		  polybar -q theme5-bar7 -c ${polydir}/config.ini &
 		  launch dunst -config ${bspdir}/dunstrc-dark
 		  
 		  ;;
 		  
-		cristina)
+		theme6)
 		
 		  SetBspwmConf "$BSPWM_BORDER" 5 50 "#9bced7" "#9bced7" "#c3a5e6" "#c3a5e6" 5 5 "$BSPWM_GAP"
 		  
 		  killeww
-		  launch polybar -q cristina-bar -c ${polydir}/config.ini
+		  launch polybar -q theme6-bar1 -c ${polydir}/config.ini
 		  launch dunst -config ${bspdir}/dunstrc-dark
 		  
 		  ;;
@@ -161,7 +161,7 @@ bspc config pointer_motion_interval       16
 
 ReloadTerms
 launch sxhkd -c ${bspdir}/sxhkdrc
-launch picom --config ${bspdir}/rices/$RICETHEME/picom.conf
+launch picom --config ${bspdir}/themes/$RICETHEME/picom.conf
 #launch picom --legacy-backends --config ${bspdir}/rices/$RICETHEME/picom.conf
 	
 if [[ ! `pidof polkit-gnome-authentication-agent-1` ]]; then

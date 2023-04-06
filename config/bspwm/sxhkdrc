@@ -19,11 +19,7 @@ super + period
 #unhide > muestra la barra de tareas
 super + comma
 	HideBar -u
-		     
-# screenshoots > toma captura de la pantalla
-super + Print
-	screenshoter
-        
+		       
 # Change transparency on focused window
 # > cambia la opacidad de la ventana actual
 ctrl + alt {plus,minus,t}
@@ -40,14 +36,14 @@ ctrl + super + alt + k
         
 # App Menu > Menu aplicaciones
 super + alt + @space
-	rofi -no-lazy-grab -show drun -theme $HOME/.config/bspwm/rices/$RICETHEME/launcher.rasi
+	~/.config/bspwm/themes/$RICETHEME/localscripts/launcher.sh
 	
 # Theme Selector > Selector de Temas
 alt + @space
-	RiceSelector
+	~/.config/bspwm/scripts/ThemeSelector
 
 # Random wallpaper > Fondo de Pantalla Aleatorio
-super + alt + w
+super + w
 	RandomWall
 
 
@@ -183,3 +179,6 @@ XF86AudioLowerVolume
 
 XF86AudioMute
 	pamixer --toggle-mute
+# Screen shot
+Print
+	~/.config/rofi/applets/bin/screenshot.sh
