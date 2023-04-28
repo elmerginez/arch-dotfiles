@@ -172,3 +172,10 @@ RandomWall
 #nitrogen --restore &
 xsetroot -cursor_name left_ptr
 
+wmname LG3D
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel' 
+export JAVA_FONTS=~/.local/share/fonts/JetBrains-Mono-Nerd-Font-Complete.ttf
+
+bspc config font JetbrainsMono Nerd Font Mono 10

@@ -7,11 +7,13 @@ super + alt + Return
 	qterminal -t floaterm
 	
 # Apps > abre una app
-super + alt + {p,c,b,f}
+super + alt + {p,c,b,n,f,a}
 	{pcmanfm, \
 	code, \
 	brave-nightly,\
-	firefox}
+	netbeans,\
+	firefox,\
+	alacritty}
         
 #hide > esconde la barra de tareas
 super + period
@@ -34,6 +36,9 @@ ctrl + super + alt + {s,r,q,l}
 ctrl + super + alt + k
 	{xkill}
         
+# Power menu
+ctrl + super + alt + @space
+	~/.config/bspwm/themes/$RICETHEME/localscripts/powermenu.sh
 # App Menu > Menu aplicaciones
 super + alt + @space
 	~/.config/bspwm/themes/$RICETHEME/localscripts/launcher.sh
