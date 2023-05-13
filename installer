@@ -185,6 +185,7 @@ printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 clear
 
+print
 logo "Installation finished"
 printf "%s%sPlease reboot, then select bspwm in your login manager and log in.%s\n\n" "${BLD}" "${CRE}" "${CNC}"
 chsh -s /usr/bin/zsh
