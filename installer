@@ -44,7 +44,7 @@ while true; do
 			
 logo "Installing needed packages..."
 
-dependencias=(base-devel pacman-contrib bspwm polybar sxhkd alacritty dunst rofi lsd jq polkit-gnome git playerctl mpd ncmpcpp ranger mpc picom feh ueberzug maim pamixer libwebp webp-pixbuf-loader xorg-xprop xorg-xkill papirus-icon-theme ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-terminus-nerd ttf-inconsolata ttf-joypixels zsh youtube-dl neofetch curl wget htop tmux ffmpeg emacs)
+dependencias=(base-devel pacman-contrib bspwm polybar sxhkd alacritty dunst rofi lsd jq polkit-gnome playerctl mpd ncmpcpp ranger mpc picom feh ueberzug maim pamixer libwebp webp-pixbuf-loader xorg-xprop xorg-xkill papirus-icon-theme ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-terminus-nerd ttf-inconsolata ttf-joypixels zsh neofetch)
 
 is_installed() {
   pacman -Qi $1 &> /dev/null
@@ -86,10 +86,10 @@ clear
 
 
 logo "Cloning Rice!"
-[ -d ~/zbspwm ] && rm -rf ~/zbspwm
-printf "Cloning rice from https://github.com/elmerginez/zbspwm.git\n\n"
+[ -d ~/arch-dotfiles ] && rm -rf ~/arch-dotfiles
+printf "Cloning rice from https://github.com/elmerginez/arch-dotfiles.git\n\n"
 cd $HOME
-git clone --depth=1 https://github.com/elmerginez/zbspwm.git
+git clone --depth=1 https://github.com/elmerginez/arch-dotfiles.git
 sleep 2
 clear
 
@@ -128,40 +128,40 @@ printf "Copying files to respective directories..\n"
 
 if [ ! -d $HOME/.config ]; then
 	mkdir -p $HOME/.config
-	cp -Rf $HOME/zbspwm/config/* $HOME/.config/
+	cp -Rf $HOME/arch-dotfiles/config/* $HOME/.config/
 else
-	cp -Rf $HOME/zbspwm/config/* $HOME/.config/
+	cp -Rf $HOME/arch-dotfiles/config/* $HOME/.config/
 fi
 
 if [ ! -d $HOME/.local/bin ]; then
 	mkdir -p $HOME/.local/bin
-	cp -Rf $HOME/zbspwm/misc/bin/* $HOME/.local/bin/
+	cp -Rf $HOME/arch-dotfiles/misc/bin/* $HOME/.local/bin/
 else
-	cp -Rf $HOME/zbspwm/misc/bin/* $HOME/.local/bin/
+	cp -Rf $HOME/arch-dotfiles/misc/bin/* $HOME/.local/bin/
 fi
 
 if [ ! -d $HOME/.local/share/applications ]; then
 	mkdir -p $HOME/.local/share/applications
-	cp -Rf $HOME/zbspwm/misc/applications/* $HOME/.local/share/applications/
+	cp -Rf $HOME/arch-dotfiles/misc/applications/* $HOME/.local/share/applications/
 else
-	cp -Rf $HOME/zbspwm/misc/applications/* $HOME/.local/share/applications/
+	cp -Rf $HOME/arch-dotfiles/misc/applications/* $HOME/.local/share/applications/
 fi
 
 if [ ! -d $HOME/.local/share/asciiart ]; then
 	mkdir -p $HOME/.local/share/asciiart
-	cp -Rf $HOME/zbspwm/misc/asciiart/* $HOME/.local/share/asciiart/
+	cp -Rf $HOME/arch-dotfiles/misc/asciiart/* $HOME/.local/share/asciiart/
 else
-	cp -Rf $HOME/zbspwm/misc/asciiart/* $HOME/.local/share/asciiart/
+	cp -Rf $HOME/arch-dotfiles/misc/asciiart/* $HOME/.local/share/asciiart/
 fi
 
 if [ ! -d $HOME/.local/share/fonts ]; then
 	mkdir -p $HOME/.local/share/fonts
-	cp -Rf $HOME/zbspwm/misc/fonts/* $HOME/.local/share/fonts/
+	cp -Rf $HOME/arch-dotfiles/misc/fonts/* $HOME/.local/share/fonts/
 else
-	cp -Rf $HOME/zbspwm/misc/fonts/* $HOME/.local/share/fonts/
+	cp -Rf $HOME/arch-dotfiles/misc/fonts/* $HOME/.local/share/fonts/
 fi
 
-cp -f $HOME/zbspwm/home/.zshrc $HOME
+cp -f $HOME/arch-dotfiles/home/.zshrc $HOME
 
 printf "%s%sFiles copied succesfully!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
