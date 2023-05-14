@@ -4,12 +4,14 @@
 
 function hide() {
 	
-	if [[ "${RICETHEME}" == @(theme1|aline|silvia|pamela) ]]; then
+	if [[ "${RICETHEME}" == @(theme1|theme2|theme5) ]]; then
 		polybar-msg cmd hide | bspc config top_padding 5
 		
-	elif [[ "${RICETHEME}" == @(isabel|cristina) ]]; then
+	elif [[ "${RICETHEME}" == @(theme3|theme6) ]]; then
 		polybar-msg cmd hide | bspc config bottom_padding 5
-		
+
+	elif [[ "${RICETHEME}" == theme4 ]]; then
+		polybar-msg cmd hide | bspc config top_padding 0
 	else 
 		echo "Error: Something fails dud.."
 	fi
@@ -17,19 +19,19 @@ function hide() {
 
 function unhide() {
 	
-	if [[ "${RICETHEME}" == @(theme1|pamela) ]]; then
+	if [[ "${RICETHEME}" == @(theme1|theme5) ]]; then
 		polybar-msg cmd show | bspc config top_padding 40
 		
-	elif [[ "${RICETHEME}" == aline ]]; then
+	elif [[ "${RICETHEME}" == theme2 ]]; then
 		polybar-msg cmd show | bspc config top_padding 40
 		
-	elif [[ "${RICETHEME}" == silvia ]]; then
-		polybar-msg cmd show | bspc config top_padding 35
+	elif [[ "${RICETHEME}" == theme4 ]]; then
+		polybar-msg cmd show | bspc config top_padding 15
 		
-	elif [[ "${RICETHEME}" == isabel ]]; then
+	elif [[ "${RICETHEME}" == theme3 ]]; then
 		polybar-msg cmd show | bspc config bottom_padding 35
 		
-	elif [[ "${RICETHEME}" == cristina ]]; then
+	elif [[ "${RICETHEME}" == theme6 ]]; then
 		polybar-msg cmd show | bspc config bottom_padding 50
 		
 	else 

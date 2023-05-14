@@ -7,13 +7,15 @@ super + alt + Return
 	qterminal -t floaterm
 	
 # Apps > abre una app
-super + alt + {p,c,b,n,f,a}
-	{pcmanfm, \
-	code, \
-	brave-nightly,\
+super + alt + {p,c,b,n,f,a,w,g}
+	{pcmanfm,\
+	code,\
+	brave,\
 	netbeans,\
 	firefox,\
-	alacritty}
+	alacritty,\
+	mysql-workbench,\
+	github-desktop}
         
 #hide > esconde la barra de tareas
 super + period

@@ -97,7 +97,7 @@ case $RICETHEME in
 		  
 		theme4)
 		
-		  SetBspwmConf "$BSPWM_BORDER" 35 5 "#d3869b" "#d3869b" "#fbf1c7" "#b8bb26" 5 5 "$BSPWM_GAP"
+		  SetBspwmConf "$BSPWM_BORDER" 15 0 "#d3869b" "#d3869b" "#fbf1c7" "#b8bb26" 0 0 "$BSPWM_GAP"
 
 		  killeww
 		  launch polybar -q theme4-bar1 -c ${polydir}/config.ini
@@ -172,10 +172,5 @@ RandomWall
 #nitrogen --restore &
 xsetroot -cursor_name left_ptr
 
+#install wmname for java apps
 wmname LG3D
-
-export _JAVA_AWT_WM_NONREPARENTING=1
-export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel' 
-export JAVA_FONTS=~/.local/share/fonts/JetBrains-Mono-Nerd-Font-Complete.ttf
-
-bspc config font JetbrainsMono Nerd Font Mono 10
