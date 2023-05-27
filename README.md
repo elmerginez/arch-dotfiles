@@ -1,5 +1,3 @@
-# zbspwm
-holii...
 <p align="center">
   Hii!!
 </p>
