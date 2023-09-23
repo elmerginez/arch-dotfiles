@@ -5,6 +5,7 @@
 <p align="center">
   This is my bspwm in arch linux configuration backup :D
 </p>
+<p>Based in <a href="https://github.com/gh0stzk/dotfiles">gh0stzk dotfiles</a></p>
 
 <details>
 <summary><b><code>Install config</code></b></summary>
