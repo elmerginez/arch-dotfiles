@@ -4,14 +4,11 @@
 
 function hide() {
 	
-	if [[ "${RICETHEME}" == @(theme1|theme2|theme5) ]]; then
+	if [[ "${RICETHEME}" == @(theme1|theme2) ]]; then
 		polybar-msg cmd hide | bspc config top_padding 5
 		
-	elif [[ "${RICETHEME}" == @(theme3|theme6) ]]; then
+	elif [[ "${RICETHEME}" == @(theme3|theme4) ]]; then
 		polybar-msg cmd hide | bspc config bottom_padding 5
-
-	elif [[ "${RICETHEME}" == theme4 ]]; then
-		polybar-msg cmd hide | bspc config top_padding 0
 	else 
 		echo "Error: Something fails dud.."
 	fi
@@ -19,24 +16,16 @@ function hide() {
 
 function unhide() {
 	
-	if [[ "${RICETHEME}" == @(theme1|theme5) ]]; then
+	if [[ "${RICETHEME}" == @(theme1) ]]; then
 		polybar-msg cmd show | bspc config top_padding 40
-		
 	elif [[ "${RICETHEME}" == theme2 ]]; then
 		polybar-msg cmd show | bspc config top_padding 40
-		
-	elif [[ "${RICETHEME}" == theme4 ]]; then
-		polybar-msg cmd show | bspc config top_padding 15
-		
 	elif [[ "${RICETHEME}" == theme3 ]]; then
 		polybar-msg cmd show | bspc config bottom_padding 35
-		
-	elif [[ "${RICETHEME}" == theme6 ]]; then
+	elif [[ "${RICETHEME}" == theme4 ]]; then
 		polybar-msg cmd show | bspc config bottom_padding 50
-		
 	else 
 		echo "Error: Something fails dud.."
-		
 	fi
 }
 

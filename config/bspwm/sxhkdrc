@@ -42,7 +42,8 @@ ctrl + super + alt + k
 ctrl + super + alt + @space
 	~/.config/bspwm/themes/$RICETHEME/localscripts/powermenu.sh
 # App Menu > Menu aplicaciones
-super + alt + @space
+#super + alt + @space
+super + @space
 	~/.config/bspwm/themes/$RICETHEME/localscripts/launcher.sh
 	
 # Theme Selector > Selector de Temas

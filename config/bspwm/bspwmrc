@@ -97,32 +97,6 @@ case $RICETHEME in
 		  
 		theme4)
 		
-		  SetBspwmConf "$BSPWM_BORDER" 15 0 "#d3869b" "#d3869b" "#fbf1c7" "#b8bb26" 0 0 "$BSPWM_GAP"
-
-		  killeww
-		  launch polybar -q theme4-bar1 -c ${polydir}/config.ini
-		  launch dunst -config ${bspdir}/dunstrc-dark
-		  
-		  ;;
-		  
-		theme5)
-		
-		  SetBspwmConf "$BSPWM_BORDER" 40 5 "#C574DD" "#C574DD" "#8897F4" "#FF4971" 5 5 "$BSPWM_GAP"
-		  
-		  killeww
-		  launch polybar -q theme5-bar1 -c ${polydir}/config.ini
-		  polybar -q theme5-bar2 -c ${polydir}/config.ini &
-		  polybar -q theme5-bar3 -c ${polydir}/config.ini &
-		  polybar -q theme5-bar4 -c ${polydir}/config.ini &
-		  polybar -q theme5-bar5 -c ${polydir}/config.ini &
-		  polybar -q theme5-bar6 -c ${polydir}/config.ini &
-		  polybar -q theme5-bar7 -c ${polydir}/config.ini &
-		  launch dunst -config ${bspdir}/dunstrc-dark
-		  
-		  ;;
-		  
-		theme6)
-		
 		  SetBspwmConf "$BSPWM_BORDER" 5 50 "#9bced7" "#9bced7" "#c3a5e6" "#c3a5e6" 5 5 "$BSPWM_GAP"
 		  
 		  killeww

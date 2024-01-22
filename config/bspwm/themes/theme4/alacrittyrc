@@ -32,35 +32,35 @@ font:
 
   size: 8
 
-# Colors (Gruvbox) Silvia Rice
+# Colors (Rose-Pine Moon) Cristina Rice
 colors:
   primary:
-    background: '#282828'
-    foreground: '#fbf1c7'
+    background: '#1f1d29'
+    foreground: '#eaeaea'
 
   normal:
-    black:   '#a89984'
-    red:     '#cc241d'
-    green:   '#98971a'
-    yellow:  '#d79921'
-    blue:    '#458588'
-    magenta: '#b16286'
-    cyan:    '#689d6a'
-    white:   '#ebdbb2'
+    black:   '#6f6e85'
+    red:     '#ea6f91'
+    green:   '#9bced7'
+    yellow:  '#f1ca93'
+    blue:    '#34738e'
+    magenta: '#c3a5e6'
+    cyan:    '#eabbb9'
+    white:   '#faebd7'
 
   bright:
-    black:   '#a89984'
-    red:     '#fb4934'
-    green:   '#b8bb26'
-    yellow:  '#fabd2f'
-    blue:    '#83a598'
-    magenta: '#d3869b'
-    cyan:    '#8ec07c'
-    white:   '#ebdbb2'
+    black:   '#6f6e85'
+    red:     '#ea6f91'
+    green:   '#9bced7'
+    yellow:  '#f1ca93'
+    blue:    '#34738e'
+    magenta: '#c3a5e6'
+    cyan:    '#ebbcba'
+    white:   '#e0def4'
     
   cursor:
-    cursor: '#fbf1c7'
-    text:	'#282828'
+    cursor: '#c3a5e6'
+    text:	'#1f1d29'
 
 selection:
   save_to_clipboard: false

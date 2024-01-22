@@ -54,7 +54,7 @@ listbox {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     3;
+    columns:                     2;
     lines:                       4;
     cycle:                       false;
     dynamic:                     true;
