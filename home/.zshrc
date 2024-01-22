@@ -12,9 +12,9 @@ git_prompt() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='%B%F{blue}󰣇%f%b  %B%F{magenta}%n%f%b %B%F{red}%~%f%b%B%F{yellow}$(git_prompt)%f%b %(?.%B%F{green}✔.%F{red}✘)%f%b %B%F{green}%f%b '
+PROMPT='%B%F{green}⋆%f%b %B%F{blue}󰣇%f%b %B%F{magenta}%n%f%b %B%F{red}%~%f%b%B%F{yellow}$(git_prompt)%f%b %(?.%B%F{green}✔.%F{red}✘)%f%b %B%F{green}➻%f%b '
 
-export VISUAL=geany;
+export VISUAL=code;
 export EDITOR=nvim;
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
